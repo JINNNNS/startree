@@ -10,13 +10,20 @@ namespace startree
     {
         static void Main(string[] args)
         {
-            for(int i = 0; i < 15; i++)
+            //8줄
+            for(int i = 0; i < 8; i++)
             {
-                for(int j = 0; j < 15 - i; j++)
+                
+                for(int j = 8-i; j >0; j--)
                 {
-                    Console.Write(" ");
+                    Console.Write(" "); //라인
                     
                 }
+                for(int j = 0; j < i * 2 + 1; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
             }
         }
     }
